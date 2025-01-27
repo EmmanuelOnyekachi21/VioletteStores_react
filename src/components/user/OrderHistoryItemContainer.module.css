@@ -1,0 +1,16 @@
+.orderHistory {
+    margin-top: 20px;
+  }
+  
+  .header {
+    font-size: 1.25rem;
+    /* color: #6050dc; */
+    margin-bottom: 15px;
+  }
+  
+  .items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+      
+      body{
+        font-family: 'Poppins', 'Times New Roman', Times, serif;
+        text-decoration: none;
+      }
+      .caro img {
+        height: 500px;
+      }
+      
+      .carousel-inner {
+        width: 100%;
+      }
+      
+      .carousel {
+        margin: 0 auto;
+      }
+
+      @media (max-width: 767px) {
+        .caro img {
+          height: 300px;
+        }
+        .caro{
+            padding-top: 50px;
+        }
+      }
+
+      @media (min-width: 620px) and (max-width: 800px) {
+        .card-list img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    
+      
+      .poppins-semibold {
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      .poppins-bold {
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .poppins-light {
+        font-family: "Poppins", serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .poppins-regular {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .slider-wrapper{
+          padding: 2rem 0;
+      }
+      .card img{
+          width: 300px;
+          border-radius: 50%;
+          height: 300px;
+      }
+      
+      .slider-wrapper .swiper-slide-button{
+          color: black;
+          margin-top: -50px;
+          transition: 0.2 ease;
+      }
+      .userSpace{
+        margin-left: 1rem;
+        margin-right: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <!-- Swiper JS -->
+    <!-- <script src="node_modules/swiper/swiper-bundle.mjs"></script> -->
+    <!-- <script src="src/assets/js/script.js"></script> -->
+  </body>
+</html>
