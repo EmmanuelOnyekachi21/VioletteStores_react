@@ -3,7 +3,7 @@ import ShopHomeCard from './ShopHomeCard';
 import { api } from '../../api';
 import { useParams } from 'react-router-dom';
 
-const Shop = () => {
+const Shop = ({setItemNumber}) => {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
   const { category_slug } = useParams();
@@ -66,7 +66,7 @@ const Shop = () => {
           <div className="row">
             {products.length > 0 ? (
               products.map(product => (
-                <ShopHomeCard key={product.id} product={product} />
+                <ShopHomeCard key={product.id} product={product} setItemNumber={setItemNumber} />
               ))
             ) : (
               <p className="text-center">No products available.</p>

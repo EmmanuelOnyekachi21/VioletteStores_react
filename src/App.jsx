@@ -46,7 +46,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<MainLayout number_of_item={itemNumber} />}>
             <Route index element={<HomePage />} />
-            <Route path='shop' element={<Shop />} />
+            <Route path='shop' element={<Shop setItemNumber={setItemNumber}/>} />
             <Route path='product/:slug' element={<ProductPage setItemNumber={setItemNumber} />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<ContactUs />} />
